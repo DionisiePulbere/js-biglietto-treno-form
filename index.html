@@ -5,9 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolitalia</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="bg-primary">
+    <main>
+        <h1 class="text-center text-white text-uppercase m-3 ">calcola il prezzo del tuo biglietto</h1>
+        <div class="container bg-white rounded">
+            <div class="row justify-content-center">
+                <div class="py-3 col-2">
+                    <h6 class="text-center">Nome Cognome</h6>
+                    <input class="text-capitalize" type="text" id="user-name">
+                </div>
+                <div class="py-3 col-2 mx-4">
+                    <h6 class="text-center">KM da percorrere</h6>
+                    <input type="text" id="user-km">
+                </div>
+                <div class="py-3 col-2">
+                    <h6 class="text-center">Fascia d'età</h6>
+                    <input type="text" id="user-age">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <button id="clc-button" class="btn btn-primary my-3 col-4 mx-4">Calcola il prezzo del biglietto</button>
+                <button id="clear-button" class="btn btn-primary my-3 col-4">Cancella</button>
+            </div>
+        </div>
+        
+        <h1 class="text-center text-white text-uppercase m-3">il tuo biglietto</h1>
+
+        <div class="container bg-white p-4 mb-4">
+            <h3 class="col-3 text-center">Dettaglio passeggeri</h3>
+            <div class="row">
+                <div class="bg-secondary ms-3 col-3">
+                    <h6 class="text-uppercase text-center mt-3 mb-2">nome del passeggero</h6>
+                    <div class="text-uppercase text-white text-center ms-h fs-3" id="user-message-name"></div> 
+                </div>
+                <div class="col-8 p-4">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="fw-bold">Offerta</div>
+                            <div id="user-discount"></div>
+                        </div>
+                        <div class="col-3">
+                            <div class="fw-bold">Carrozza</div>
+                            <div id="user-carriage"></div>
+                        </div>
+                        <div class="col-3">
+                            <div class="fw-bold">Codice CP</div>
+                            <div id="user-code"></div>
+                        </div>
+                        <div class="col-3">
+                            <div class="fw-bold">Costo biglietto</div>
+                            <div id="user-ticket-price"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
