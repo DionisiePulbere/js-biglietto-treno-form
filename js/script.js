@@ -26,16 +26,12 @@ clcButton.addEventListener('click', function() {
     const userName = document.querySelector('#user-name').value;
     const userKm = parseInt(document.querySelector('#user-km').value);
     const userAge = parseInt(document.querySelector('#user-age').value);
-    console.log(userName);
-    console.log(userKm);
-    console.log(userAge);
 
     //Definiamo il costo al Km    
     const priceKm = 0.21 ;
     
     //Calcoliamo il costo dei Km 
     const totKmPrice = userKm * priceKm ;
-    console.log(totKmPrice);
 
     // Defianimo gli sconti  
     const discountTeen = 20;
